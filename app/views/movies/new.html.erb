@@ -1,0 +1,7 @@
+<%= simple_form_for @movie do |f| %>
+  <%= f.input :name %>
+  <%= f.input :overview %>
+  <%= f.input :poster_url %>
+  <%= f.input :rating %>
+  <%= f.submit class: "btn btn-primary" %>
+<% end %>
