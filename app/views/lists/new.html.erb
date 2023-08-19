@@ -1,0 +1,8 @@
+<h1>Create a new List</h1>
+<%= simple_form_for @list do |f| %>
+  <%= f.input :name %>
+  <%# <%= f.association :movies, input_html: { multiple_select: true }, include_blank: false %>
+  <%= f.submit "📚 Submit", class: "btn btn-outline-primary btn-sm" %>
+<% end %>
+
+<h4><%= link_to "😍 Go back to movie list", lists_path, class: "btn btn-primary" %></h4>

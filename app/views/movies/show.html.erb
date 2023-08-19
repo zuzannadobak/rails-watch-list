@@ -1,9 +1,0 @@
-<%= @movie.poster_url %>
-<%= link_to "Back to movie list", moviess_path, class: 'btn btn-primary'%>
-
-<%= simple_form_for (@movie) do |f| %>
-  <%= f.input :title %>
-  <%= f.input :overview %>
-  <%= f.input :rating %>
-  <%= f.submit class: "btn btn-primary" %>
-<% end %>

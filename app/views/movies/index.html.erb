@@ -1,6 +1,0 @@
-<h1>Hi from index</h1>
-<% @movies.each do |movie| %>
-<h2> <%= link_to movie.name, movie_path(movie.id) %> </h2>
-<% end %>
-
-<%= link_to "Create new movie", new_movie_path, class: 'btn btn-primary'%>
